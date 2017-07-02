@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TouchPad Demo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class='controller'>
+		<div class='lightSwitch'>
+			<img onclick='switchGreen()' src = './images/green.png' class ='button' id='greenSwitch'> 
+			<img onclick='switchRed()' src = './images/red.png' class ='button' id='redSwitch'> 
+			<img onclick='switchBlue()' src = './images/blue.png' class ='button' id='blueSwitch'> 
+			<img onclick='switchWhite()' src = './images/white.png' class ='button' id='whiteSwitch'> 
+		</div>
+		<div class='changeBrightness'>
+			<img onclick='plusBright()' src = './images/plus.png' id='plusBrightness'>
+			<img onclick='minusBright()' src = './images/min.png' id='minusBrightness'>
+		</div>
+		<img id='display' src = './images/disp0.png'>
+	</div>
+		<img id='light' src =  './images/bright0.png'>
+</body>
+
+</html>

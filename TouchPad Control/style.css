@@ -1,0 +1,65 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	background-color: #C3C3C3;
+}
+.controller {
+	width: 45vw;
+	height: 23vw;
+	background-color: #555;
+	position: absolute;
+	left: 12.5vw;
+	top: 10vw;
+	border-radius: 1vw;
+}
+.lightSwitch {
+	background-color: #444;
+	position: relative;
+	margin-left: 1vw;
+	margin-top: 1vw;
+	height: 12vw;
+	width: 12vw;
+}
+.button {
+	padding: .25vw;
+	height: 5vw;
+	width: 5vw;
+	display: inline-grid;
+	margin-left: .2vw;
+	margin-top: .2vw;
+	cursor: pointer;
+}
+#light {
+	position: absolute;
+	left: 62vw;
+	top: 15vw;
+}
+.changeBrightness {
+	height: 6vw;
+	width: 12vw;
+	background-color: #444;	
+	position: absolute;
+	top: 2vw;
+	right: 6vw;
+}
+#plusBrightness {
+	cursor: pointer;
+	height: 5vw;
+	width: 5vw;
+	padding: .4vw;
+}
+#minusBrightness {
+	height: 5vw;
+	width: 5vw;
+	padding: .4vw;
+	cursor: pointer;
+}
+#display {
+	position: absolute;
+	height: 10vw;
+	float: right;
+	right: 3vw;
+	bottom: 2vw;
+}
