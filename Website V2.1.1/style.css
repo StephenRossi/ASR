@@ -1,0 +1,253 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: linear-gradient(to bottom, #aaa 0%, #ddd 20%, #ddd 80%, #aaa 100%) no-repeat fixed center;
+}
+header {
+	width: 100%;
+	height: 5vw;
+	background-color: #111; 
+	position: fixed;
+	border-bottom: .1vw solid #ddd;
+	transition-duration: .6s;
+	z-index: 500;
+}
+header.active {
+	opacity: .7;
+	transition-duration: .6s;
+}
+nav ul {
+	margin-left: 26.6vw;
+	height: 5vw;
+}
+nav ul li {
+	list-style: none;
+	float: left;
+	margin-right: 0px;
+	margin-top: 0px;
+	border-left: 1px solid #fff;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	height: 3.1vw;
+	padding-top: 1.9vw;
+	transition-duration: .3s;
+	cursor: pointer;
+}
+nav ul li:hover {
+	transition-duration: .7s;
+	background-color: #0c0b3d;
+}
+
+nav ul li:nth-child(5) {
+ border-right: 1px solid #fff;
+}
+nav ul li div {
+	color: #fff;
+	font-family: Arial;
+	font-size: 1vw;
+	padding-top: .2vw;
+	text-decoration: none;
+}
+#bodyOne {
+	text-align: center;
+}
+#bodyOne img {
+	margin: 16vw auto;
+	width: 80%;
+	padding-bottom: 6vw;
+}
+#bodyTwo {
+	background-color: #222;
+	width: 100%;
+	height: 37vw;
+}
+#bodyThree {
+	height: 40vw;
+	width: 100%;
+}
+#bodyFour {
+	background-color: #222;
+	width: 100%;
+	height: 34vw;
+}
+#bodyFive {
+	height: 40vw;
+	width: 100%;
+}
+#footer {
+	background-color: #222;
+	width: 100%;
+	height: 6vw;
+}
+#bodyTwo {
+	color: #ddd;
+	font-family: cursive;
+	font-size: 2.5vw;
+	text-align: center;
+}
+#bodyTwo div {
+	padding-top: 5vw;
+	width: 80%;
+	margin-left: 10vw;
+	font-family: 'Abril Fatface', cursive;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 4vw;
+}
+#bodyTwo #subscribe {
+	font-size: 2vw;
+	font-family: 'Saira Condensed', sans-serif;
+	margin-top: -5vw;
+}
+#bodyTwo form {
+	margin-top: 2.5vw;
+}
+#subEmail {
+	background-color: #222;
+	border: none;
+	border: 1px solid #444;
+	width: 18%;
+	height: 2vw;
+	color: #777;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-top: .8vw;
+	padding-bottom: .8vw;
+	transition-duration: .2s;
+	font-size: 1.4vw;
+}
+#subBut {
+	background-color: #222;
+	color: #ddd;
+	padding-top: .8vw;
+	padding-bottom: .8vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	text-align: center;
+	font-size: 1.4vw;
+	border-radius: .2vw;
+	border: 3px solid #ddd;
+	transition: .4s;
+}
+#subEmail:focus {
+    outline: none !important;
+    border:1px solid #0c0b3d;
+    transition-duration: .2s;
+    background-color: #333;
+}
+#subBut:hover {
+	cursor: pointer;
+	background-color: #0c0b3d;
+	border-color: #c44e00;
+	color: #c44e00;
+	transition: .4s;
+}
+.divider {
+	height: 36vw;
+	margin-top: 4vw;
+	margin-left: 60vw;
+	width: .1vw;
+	border-left: .1vw solid #444;
+}
+#productsDesc {
+	width: 34.8vw;
+	float: right;
+	margin-right: 2.4vw;
+	margin-top: -29vw;
+	text-align: center;
+	font-size: 1.8vw;
+	font-family: 'Saira Condensed', sans-serif;
+}
+#slideBox {
+	width: 55vw;
+	height: 35vw;
+	margin-left: 2.5vw;
+	margin-top: .3vw;
+	background-color: #afbbce;
+	position: absolute;
+	border-radius: .3vw;
+	border: .1vw solid #7e8796;
+	overflow: hidden;
+	z-index: 2;
+}
+#prevSlide, #nextSlide {
+	width: 2vw;
+	height: 10vw;
+	margin-top: 9vw;
+	position: absolute;
+	background-color: rgba(136, 141, 150, .3);
+	padding-top: 8vw;
+	transition-duration: .6s;
+	cursor: pointer;
+}
+#nextSlide {
+	right: 0vw;
+	text-align: right;
+	border-top-left-radius: 1vw;
+	border-bottom-left-radius: 1vw;
+	padding-right: .4vw;
+}
+#prevSlide {
+	border-top-right-radius: 1vw;
+	border-bottom-right-radius: 1vw;
+	padding-left: .4vw;
+}
+#prevSlide:hover, #nextSlide:hover {
+	background-color: rgba(136,141,150,.8);
+	transition-duration: .6s;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.dot {
+  cursor:pointer;
+  height: 1.5vw;
+  width: 1.5vw;
+  border-radius: 50%;
+  background-color: rgba(136,141,150,.4);
+  display: inline-block;
+  margin-top: 33vw;
+  transition-duration: .5s;
+  z-index: 1;
+}
+.dot:hover {
+	background-color: rgba(136,141,150,.9);
+	transition-duration: .5s;
+}
+.mySlides {
+    display: none;
+    position: absolute;
+   	width: 55vw;
+	height: 35vw;
+	border-radius: .3vw;
+	z-index: -100;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
